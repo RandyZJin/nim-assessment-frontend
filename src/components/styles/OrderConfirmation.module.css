@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 60px;
+  align-items: center;
+  align-content: space-around;
+}
+
+.receipt {
+  width: 80%;
+  border-style: dotted;
+  border-color: black;
+}
+
+table {
+  border: 1;
+  border-style: groove;
+  border-color: cornflowerblue;
+  display: inline-table;
+  width: 100%;
+  text-align: center;
+}
+
+tr {
+  border: solid thin;
+}
