@@ -20,7 +20,11 @@ function OrderModal({ order, setOrderModal }) {
       })
     });
     const data = await response.json();
-    console.log(data);
+    if (response.status === 200) {
+      setTimeout(() => {
+        window.location.href = `/order-confirmation/${data.id}`;
+      }, 1000);
+    }
   };
   return (
     <>

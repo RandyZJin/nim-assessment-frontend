@@ -21,7 +21,6 @@ function ConfirmationPage() {
   }, []);
   return (
     <div>
-      Hello World from {id}!
       <OrderConfirmation order={order} testOrder={testOrder} />
     </div>
   );

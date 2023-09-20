@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 60px;
+  align-items: center;
+  align-content: space-around;
+}
+
+table {
+  display: inline-table;
+  width: 70%;
+  flex-direction: column;
+  align-content: flex-end;
+  /* align-items: center; */
+}
