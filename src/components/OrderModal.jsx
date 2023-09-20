@@ -39,13 +39,14 @@ function OrderModal({ order, setOrderModal }) {
       setErrorMessage("Please ensure that the phone number is valid");
       validOrder = false;
     }
-    const formattedPhone = phoneValidationArray.filter(
+    const formattedPhoneArray = phoneValidationArray.filter(
       (x) => Number(x) >= 0 && Number(x <= 9)
     );
-    formattedPhone.splice(0, 0, "(");
-    formattedPhone.splice(4, 0, ")");
-    formattedPhone.splice(8, 0, "-");
-    setPhone(formattedPhone.join(""));
+    formattedPhoneArray.splice(0, 0, "(");
+    formattedPhoneArray.splice(4, 0, ")");
+    formattedPhoneArray.splice(8, 0, "-");
+    const formattedPhone = formattedPhoneArray.join("");
+    setPhone(formattedPhone);
     if (validOrder) {
       const response = await fetch("/api/orders", {
         method: "POST",
