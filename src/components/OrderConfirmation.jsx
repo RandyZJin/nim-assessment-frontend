@@ -44,7 +44,6 @@ function OrderConfirmation(props) {
           <div>Your order total is: ${orderTotal}</div>
         </div>
       )}
-
       {order.id && (
         <button onClick={() => downloadAsPdf()}>Print Receipt</button>
       )}
