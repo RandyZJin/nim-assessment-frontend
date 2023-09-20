@@ -40,7 +40,7 @@ function OrderModal({ order, setOrderModal }) {
       validOrder = false;
     }
     const formattedPhoneArray = phoneValidationArray.filter(
-      (x) => Number(x) >= 0 && Number(x <= 9)
+      (x) => Number(x) >= 0 && Number(x) <= 9
     );
     formattedPhoneArray.splice(0, 0, "(");
     formattedPhoneArray.splice(4, 0, ")");
